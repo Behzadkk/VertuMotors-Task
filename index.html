@@ -7,6 +7,10 @@
     <title>Vertu Motors</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
@@ -21,35 +25,44 @@
             <img
               src="https://www.bristolstreetversa.com/custom/51649.png"
               alt="Vertu Motors logo"
+              class="container"
             />
           </a>
         </div>
-        <nav class="top-header__container">
-          <ul>
-            <li>Contrast</li>
-            <li>Font Size</li>
+        <nav>
+          <ul class="list-menu">
+            <li class="adjusting">
+              Contrast <a href="#"><i class="fas fa-font contrast"></i></a>
+              <a href="#"><i class="fas fa-font"></i></a>
+            </li>
+            <li class="adjusting">
+              Font Size
+              <a href="#"><i class="fas fa-font">-</i></a>
+              <a href="#"><i class="fas fa-font"></i></a>
+              <a href="#"><i class="fas fa-font">+</i></a>
+            </li>
             <li><a href="#">Download a Brochure</a></li>
             <li><a href="#">Blog</a></li>
             <li>Call us on 0330 042 5909</li>
           </ul>
-          <ul>
+          <ul class="list-menu">
             <li><a href="#"></a>New Vehicles</li>
             <li><a href="#"></a>Nearly New/Used Vehicles</li>
             <li><a href="#"></a>Motability</li>
             <li><a href="#"></a>Aftercare</li>
-            <li><a href="#"></a></li>
+            <li><a href="#"></a>Contact Us</li>
           </ul>
         </nav>
       </div>
     </header>
 
     <header>
-      <div>
+      <div class="top-menu">
         <div>
-          <a href="#">Connect</a>
+          <a href="#">Versa Connect</a>
         </div>
         <nav>
-          <ul>
+          <ul class="list-menu top-menu__items">
             <li><a href="#">Overview</a></li>
             <li><a href="#">Offers</a></li>
             <li><a href="#">Models</a></li>
@@ -61,12 +74,13 @@
 
     <main>
       <!-- main banner -->
-      <section>
+      <section class="banner">
         <img
           src="https://www.bristolstreetversa.com/custom/51650.jpg"
           alt="Versa Connect's Banner"
+          class="container"
         />
-        <div>
+        <div class="banner__details">
           <h1>Versa Connect</h1>
           <p>
             "The Ford Tourneo Connect is a relaxing and comfortable place to be.
@@ -79,60 +93,60 @@
       </section>
 
       <!-- information -->
-      <section>
-        <div>
+      <section class="information">
+        <div class="tabs">
           <nav>
-            <ul>
-              <li><a href="#"></a>Dimensions</li>
-              <li><a href="#"></a>Vehicle Layouts</li>
-              <li><a href="#"></a>Colour</li>
-              <li><a href="#"></a>Interior Trim</li>
+            <ul class="list-menu information">
+              <li class="tabs__selector"><a href="#">Dimensions</a></li>
+              <li class="tabs__selector"><a href="#">Vehicle Layouts</a></li>
+              <li class="tabs__selector"><a href="#">Colour</a></li>
+              <li class="tabs__selector"><a href="#">Interior Trim</a></li>
             </ul>
           </nav>
           <!-- dimensions -->
-          <div>
+          <div class="information dimensions">
             <!-- table -->
             <div>
-              <table>
+              <table class="dimensions__table">
                 <tr>
                   <th></th>
                   <th>Short</th>
                   <th>Long</th>
                 </tr>
                 <tr>
-                  <td>Entry height</td>
-                  <td>1,373mm</td>
-                  <td>1,373mm</td>
+                  <td class="dimensions__data">Entry height</td>
+                  <td class="dimensions__data">1,373mm</td>
+                  <td class="dimensions__data">1,373mm</td>
                 </tr>
                 <tr>
-                  <td>Ramp length</td>
-                  <td>1,010mm</td>
-                  <td>1,010mm</td>
+                  <td class="dimensions__data">Ramp length</td>
+                  <td class="dimensions__data">1,010mm</td>
+                  <td class="dimensions__data">1,010mm</td>
                 </tr>
                 <tr>
-                  <td>Ramp width</td>
-                  <td>755mm</td>
-                  <td>755mm</td>
+                  <td class="dimensions__data">Ramp width</td>
+                  <td class="dimensions__data">755mm</td>
+                  <td class="dimensions__data">755mm</td>
                 </tr>
                 <tr>
-                  <td>Channel length</td>
-                  <td>1,580mm</td>
-                  <td>1,580mm</td>
+                  <td class="dimensions__data">Channel length</td>
+                  <td class="dimensions__data">1,580mm</td>
+                  <td class="dimensions__data">1,580mm</td>
                 </tr>
                 <tr>
-                  <td>External height</td>
-                  <td>1,852mm</td>
-                  <td>1,845mm</td>
+                  <td class="dimensions__data">External height</td>
+                  <td class="dimensions__data">1,852mm</td>
+                  <td class="dimensions__data">1,845mm</td>
                 </tr>
                 <tr>
-                  <td>External length</td>
-                  <td>4,418mm</td>
-                  <td>4,818mm</td>
+                  <td class="dimensions__data">External length</td>
+                  <td class="dimensions__data">4,418mm</td>
+                  <td class="dimensions__data">4,818mm</td>
                 </tr>
               </table>
             </div>
             <!-- dimensions pic -->
-            <div>
+            <div class="dimensions__image">
               <img
                 src="https://www.bristolstreetversa.com/custom/49792.jpg"
                 alt="car's dimensions"
@@ -140,7 +154,7 @@
             </div>
           </div>
           <!-- vehicle layouts -->
-          <div>
+          <div class="information">
             <p>Short (based on Ford Tourneo Connect)</p>
             <img
               src="https://www.bristolstreetversa.com/custom/50422.jpg"
@@ -156,26 +170,29 @@
               as Row 2 seats)
             </p>
           </div>
-          <!-- Colours -->
-          <div>
+          <!-- Colors -->
+          <div class="information" id="colors">
             <div>
               <div id="nonmetallic">
                 <div id="silver">
                   <img
                     src="https://www.bristolstreetversa.com/images/colour_swatches/Grand-Tourneo-Connect/Silver.png"
                     alt="Silver Versa"
+                    class="container"
                   />
                 </div>
                 <div id="DeepImpactBlue">
                   <img
                     src="https://www.bristolstreetversa.com/images/colour_swatches/Grand-Tourneo-Connect/DeepImpactBlue.png"
                     alt="DeepImpactBlue Versa"
+                    class="container"
                   />
                 </div>
                 <div id="red">
                   <img
                     src="https://www.bristolstreetversa.com/images/colour_swatches/Grand-Tourneo-Connect/Red.png"
                     alt="Red Versa"
+                    class="container"
                   />
                 </div>
               </div>
@@ -184,97 +201,106 @@
                   <img
                     src="https://www.bristolstreetversa.com/images/colour_swatches/Grand-Tourneo-Connect/Metalicious.png"
                     alt="Metalicious Versa"
+                    class="container"
                   />
                 </div>
                 <div id="guard">
                   <img
                     src="https://www.bristolstreetversa.com/images/colour_swatches/Grand-Tourneo-Connect/Guard.png"
                     alt="Guard Versa"
+                    class="container"
                   />
                 </div>
                 <div id="solar">
                   <img
                     src="https://www.bristolstreetversa.com/images/colour_swatches/Grand-Tourneo-Connect/Solar.png"
                     alt="Solar Versa"
+                    class="container"
                   />
                 </div>
                 <div id="blazerblue">
                   <img
                     src="https://www.bristolstreetversa.com/images/colour_swatches/Grand-Tourneo-Connect/BlazerBlue.png"
                     alt="BlazerBlue Versa"
+                    class="container"
                   />
                 </div>
                 <div id="black">
                   <img
                     src="https://www.bristolstreetversa.com/images/colour_swatches/Grand-Tourneo-Connect/Black.png"
                     alt="Black Versa"
+                    class="container"
                   />
                 </div>
                 <div id="magnetic">
                   <img
                     src="https://www.bristolstreetversa.com/images/colour_swatches/Grand-Tourneo-Connect/Magnetic.png"
                     alt="Magnetic Versa"
+                    class="container"
                   />
                 </div>
               </div>
             </div>
             <div>
               <nav>
-                <a href="#silver"></a>
-                <a href="#deepImpactBlue"></a>
-                <a href="#red"></a>
-                <a href="#metalicious"></a>
-                <a href="#guard"></a>
-                <a href="#solar"></a>
-                <a href="#blazerBlue"></a>
-                <a href="#black"></a>
-                <a href="#magnetic"></a>
+                <a href="#silver" class="colors__link"></a>
+                <a href="#deepImpactBlue" class="colors__link"></a>
+                <a href="#red" class="colors__link"></a>
+                <a href="#metalicious" class="colors__link"></a>
+                <a href="#guard" class="colors__link"></a>
+                <a href="#solar" class="colors__link"></a>
+                <a href="#blazerBlue" class="colors__link"></a>
+                <a href="#black" class="colors__link"></a>
+                <a href="#magnetic" class="colors__link"></a>
               </nav>
             </div>
             <div>
               <nav>
-                <a href="#nonmetallic"></a>
-                <a href="#metallic"></a>
+                <a href="#nonmetallic">Non Metallic</a>
+                <a href="#metallic">Metallic</a>
               </nav>
             </div>
           </div>
           <!-- Interior Trim -->
-          <div>
-            <div>
+          <div class="trim information" id="trim">
+            <div class="trim__image">
               <img
                 src="https://www.bristolstreetversa.com/custom/50563.jpg"
                 alt="Versa Interior"
+                class="container"
               />
             </div>
-            <div>
-              <img
-                src="https://www.bristolstreetversa.com/custom/51652.jpg"
-                alt="Versa Titanium"
-              />
-              <h3>Titanium</h3>
-              <p>Insert: Chicane in Medium Stone</p>
-              <p>Bolster: Malt in Medium Stone</p>
-              <input type="checkbox" name="Titanium" id="Titanium" />
-            </div>
-            <div>
-              <img
-                src="https://www.bristolstreetversa.com/custom/51653.jpg"
-                alt="Versa Zetec"
-              />
-              <h3>Zetec</h3>
-              <p>Insert: Route in Charcoal Black</p>
-              <p>Bolster: Max in Charcoal Black</p>
-              <input type="checkbox" name="Zetec" id="Zetec" />
-            </div>
-            <div>
-              <img
-                src="https://www.bristolstreetversa.com/custom/51654.jpg"
-                alt="Versa Titanium2"
-              />
-              <h3>Titanium</h3>
-              <p>Insert: Chicane in Charcoal Black</p>
-              <p>Bolster: Malt in Charcoal Black</p>
-              <input type="checkbox" name="Titanium2" id="Titanium2" />
+            <div class="trim__selectors">
+              <div>
+                <img
+                  src="https://www.bristolstreetversa.com/custom/51652.jpg"
+                  alt="Versa Titanium"
+                />
+                <h3>Titanium</h3>
+                <p>Insert: Chicane in Medium Stone</p>
+                <p>Bolster: Malt in Medium Stone</p>
+                <input type="checkbox" name="Titanium" id="Titanium" />
+              </div>
+              <div>
+                <img
+                  src="https://www.bristolstreetversa.com/custom/51653.jpg"
+                  alt="Versa Zetec"
+                />
+                <h3>Zetec</h3>
+                <p>Insert: Route in Charcoal Black</p>
+                <p>Bolster: Max in Charcoal Black</p>
+                <input type="checkbox" name="Zetec" id="Zetec" />
+              </div>
+              <div>
+                <img
+                  src="https://www.bristolstreetversa.com/custom/51654.jpg"
+                  alt="Versa Titanium2"
+                />
+                <h3>Titanium</h3>
+                <p>Insert: Chicane in Charcoal Black</p>
+                <p>Bolster: Malt in Charcoal Black</p>
+                <input type="checkbox" name="Titanium2" id="Titanium2" />
+              </div>
             </div>
           </div>
         </div>
@@ -286,61 +312,68 @@
             <img
               src="https://www.bristolstreetversa.com/custom/50563.jpg"
               alt="Versa Gallery 1"
+              class="container"
             />
           </div>
           <div>
             <img
               src="https://www.bristolstreetversa.com/custom/50564.jpg"
               alt="Versa Gallery 2"
+              class="container"
             />
           </div>
           <div>
             <img
               src="https://www.bristolstreetversa.com/custom/50565.jpg"
               alt="Versa Gallery 3"
+              class="container"
             />
           </div>
           <!-- <a href=""></a> next photo -->
           <!-- <a href=""></a>previous photo -->
         </div>
-        <div>
-          <p>
-            The Versa Connect takes these attributes and focuses on extending
-            them seamlessly into the wheelchair accessible aspects of our
-            vehicle. It is our aim to produce a conversion that is both
-            practical and stylish, with an attention to detail that provides the
-            same high quality look and feel throughout the vehicle.
-          </p>
-          <p>
-            The Versa Connect is available in two wheelbases. The Short Versa
-            Connect can accommodate the wheelchair user and up to 3 seated
-            passengers (including the driver) or up to 5 seated passengers
-            without the wheelchair. The Long Versa Connect can accommodate the
-            wheelchair user and up to 5 seated passengers (including the driver)
-            or up to 7 seated passengers without the wheelchair.
-          </p>
-          <p>
-            Twin sliding doors allow for ease of passenger access with a
-            lightweight manual ramp to the rear for wheelchair access. As an
-            optional extra, the ramp can have the added ability, using a simple
-            lever, to fold- at into the vehicle so that when the wheelchair user
-            is not travelling, a huge and easily accessible boot space is
-            created making the Versa Connect even more practical.
-          </p>
+        <div class="information">
+          <div class="information">
+            <p>
+              The Versa Connect takes these attributes and focuses on extending
+              them seamlessly into the wheelchair accessible aspects of our
+              vehicle. It is our aim to produce a conversion that is both
+              practical and stylish, with an attention to detail that provides
+              the same high quality look and feel throughout the vehicle.
+            </p>
+            <p>
+              The Versa Connect is available in two wheelbases. The Short Versa
+              Connect can accommodate the wheelchair user and up to 3 seated
+              passengers (including the driver) or up to 5 seated passengers
+              without the wheelchair. The Long Versa Connect can accommodate the
+              wheelchair user and up to 5 seated passengers (including the
+              driver) or up to 7 seated passengers without the wheelchair.
+            </p>
+            <p>
+              Twin sliding doors allow for ease of passenger access with a
+              lightweight manual ramp to the rear for wheelchair access. As an
+              optional extra, the ramp can have the added ability, using a
+              simple lever, to fold- at into the vehicle so that when the
+              wheelchair user is not travelling, a huge and easily accessible
+              boot space is created making the Versa Connect even more
+              practical.
+            </p>
+          </div>
         </div>
         <button>View our Versa Connect offers</button>
       </section>
 
       <!-- Keep You Going -->
-      <section>
+      <section class="banner">
         <div>
           <div>
             <img
               src="https://www.bristolstreetversa.com/custom/51651.jpg"
               alt="Keep You Going"
+              class="container"
             />
           </div>
-          <div>
+          <div class="banner__details">
             <h2>Keeping you going</h2>
             <p>
               At Bristol Street Versa our priority is to offer so much more than
@@ -355,36 +388,43 @@
       </section>
     </main>
     <footer>
-      <div>
-        <div>
-          <p>
-            If you're looking for a new or used Wheelchair Accessible Vehicle
-            (WAV), then Bristol Street Versa is the best place to start.
-          </p>
+      <div class="information footer">
+        <div class="footer__row information">
+          <div class="footer__info information">
+            <div>
+              <img
+                src="https://www.bristolstreetversa.com/custom/51649.png"
+                alt="Vertu motors Logo"
+                class="footer__logo"
+              />
+            </div>
+            <p>
+              If you're looking for a new or used Wheelchair Accessible Vehicle
+              (WAV), then Bristol Street Versa is the best place to start.
+            </p>
+          </div>
+          <div class="footer__links">
+            <div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New Vehicles</a></li>
+                <li><a href="#">Motability</a></li>
+                <li><a href="#">Newly New & Used</a></li>
+                <li><a href="#">Aftercare</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="">Blog</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul></ul>
+            </div>
+            <div>
+              <ul></ul>
+            </div>
+          </div>
         </div>
-        <div>
-          <div>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">New Vehicles</a></li>
-              <li><a href="#">Motability</a></li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li><a href="#">Newly New & Used</a></li>
-              <li><a href="#">Aftercare</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li><a href="#">Terms</a></li>
-              <li><a href="">Blog</a></li>
-            </ul>
-          </div>
-        </div>
-        <div>
+        <div class="footer__address information">
           <p>
             Registered office for all group companies: Vertu Motors plc, Show
             Accessibility Options |Vertu House, Fifth Avenue Business Park, Team
@@ -393,7 +433,7 @@
           </p>
         </div>
       </div>
-      <div>
+      <div class="form">
         <div>
           <h2>Interested in this vehicle?</h2>
           <p>
