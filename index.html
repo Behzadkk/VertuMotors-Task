@@ -19,101 +19,103 @@
   </head>
   <body>
     <header>
-      <div class="top-header">
-        <div class="top-header__logo">
+      <div class="container">
+        <div class="logo logo--right-border">
           <a href="#">
             <img
               src="https://www.bristolstreetversa.com/custom/51649.png"
               alt="Vertu Motors logo"
-              class="top-header__logo--width"
+              class="container--fit"
             />
           </a>
         </div>
-        <nav class="top-header__navs">
-          <div class="top-nav">
-            <ul class="top-nav--menu">
-              <li class="top-nav__item">
+        <nav class="container container--block">
+          <div>
+            <ul class="nav nav--small nav--justify-end nav--border-bottom">
+              <li class="nav__item">
                 Contrast
                 <a href="#"
                   ><i
-                    class="fas fa-font top-nav__item--adjustments-border top-nav__item--contrast"
+                    class="fas fa-font nav__item--border nav__item--small nav__item--contrast"
                   ></i
                 ></a>
                 <a href="#"
-                  ><i class="fas fa-font top-nav__item--adjustments-border"></i
+                  ><i
+                    class="fas fa-font nav__item--border nav__item--small nav__item--blue"
+                  ></i
                 ></a>
               </li>
-              <li class="top-nav__item adjusting">
+              <li class="nav__item">
                 Font Size
                 <a href="#"
-                  ><i class="fas fa-font top-nav__item--adjustments-border"
+                  ><i
+                    class="fas fa-font nav__item--border nav__item--small nav__item--blue"
                     >-</i
                   ></a
                 >
                 <a href="#"
-                  ><i class="fas fa-font top-nav__item--adjustments-border"></i
+                  ><i
+                    class="fas fa-font nav__item--border nav__item--small nav__item--blue"
+                  ></i
                 ></a>
                 <a href="#"
-                  ><i class="fas fa-font top-nav__item--adjustments-border"
+                  ><i
+                    class="fas fa-font nav__item--border nav__item--small nav__item--blue"
                     >+</i
                   ></a
                 >
               </li>
-              <li class="top-nav__item ">
-                <a href="#" class="top-nav__item--links-color"
+              <li class="nav__item ">
+                <a href="#" class="nav__item--links-decoration"
                   >Download a Brochure</a
                 >
               </li>
-              <li class="top-nav__item ">
-                <a href="#" class="top-nav__item--links-color">Blog</a>
+              <li class="nav__item">
+                <a href="#" class="nav__item--links-decoration">Blog</a>
               </li>
-              <li class="top-nav__item top-nav__item--call-color">
-                <i class="fas fa-phone top-nav__item--mirror"></i>Call us on
-                0330 042 5909
+              <li class="nav__item nav__item--green-background">
+                <i class="fas fa-phone nav__item--mirror"></i>Call us on 0330
+                042 5909
                 <i class="fas fa-info-circle"></i>
               </li>
             </ul>
           </div>
-          <div class="second-nav">
-            <ul class="second-nav--menu">
-              <li><a href="#"></a>New Vehicles</li>
-              <li><a href="#"></a>Nearly New/Used Vehicles</li>
-              <li><a href="#"></a>Motability</li>
-              <li><a href="#"></a>Aftercare</li>
-              <li><a href="#"></a>Contact Us</li>
+          <div>
+            <ul class="nav nav--large nav--space-around">
+              <li class="nav__item"><a href="#"></a>New Vehicles</li>
+              <li class="nav__item"><a href="#"></a>Nearly New/Used Vehicles</li>
+              <li class="nav__item"><a href="#"></a>Motability</li>
+              <li class="nav__item"><a href="#"></a>Aftercare</li>
+              <li class="nav__item"><a href="#"></a>Contact Us</li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
-
-    <header>
-      <div class="banner-menu">
-        <div>
-          <a href="#" class="banner-menu__item--color"
-            >Versa Connect<i class="fas fa-sort-down"></i
-          ></a>
-        </div>
-        <nav class="banner-menu--width">
-          <ul class="banner-menu__item">
-            <li class="banner-menu__items--links">
-              <a href="#" class="banner-menu__item--color">Overview</a>
-            </li>
-            <li class="banner-menu__items--links">
-              <a href="#" class="banner-menu__item--color">Offers</a>
-            </li>
-            <li class="banner-menu__items--links">
-              <a href="#" class="banner-menu__item--color">Models</a>
-            </li>
-            <li class="banner-menu__items--links">
-              <a href="#" class="banner-menu__item--color">Optional Extras</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
     <main>
+      <section>
+        <div class="container container--padding nav nav--large nav--blue nav--space-between">
+          <div>
+            <a href="#" class="banner-menu__item--color">Versa Connect<i class="fas fa-sort-down"></i></a>
+          </div>
+          <nav class="banner-menu--width">
+            <ul class="banner-menu__item">
+              <li class="banner-menu__items--links">
+                <a href="#" class="banner-menu__item--color">Overview</a>
+              </li>
+              <li class="banner-menu__items--links">
+                <a href="#" class="banner-menu__item--color">Offers</a>
+              </li>
+              <li class="banner-menu__items--links">
+                <a href="#" class="banner-menu__item--color">Models</a>
+              </li>
+              <li class="banner-menu__items--links">
+                <a href="#" class="banner-menu__item--color">Optional Extras</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
       <!-- main banner -->
       <section class="banner">
         <img
@@ -376,11 +378,17 @@
           </div>
 
           <!-- Next and previous buttons -->
-          <a class="slideshow__previous" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
-          <a class="slideshow__next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+          <a class="slideshow__previous" onclick="plusSlides(-1)"
+            ><i class="fas fa-chevron-left"></i
+          ></a>
+          <a class="slideshow__next" onclick="plusSlides(1)"
+            ><i class="fas fa-chevron-right"></i
+          ></a>
         </div>
-        <div class="information">
-          <div class="information">
+      </section>
+      <section>
+        <div class="accessibility">
+          <div class="accessibility__paragraphs">
             <p>
               The Versa Connect takes these attributes and focuses on extending
               them seamlessly into the wheelchair accessible aspects of our
@@ -406,8 +414,12 @@
               practical.
             </p>
           </div>
+          <div class="accessibility__button">
+            <button class="accessibility__button--large">
+              View our Versa Connect offers
+            </button>
+          </div>
         </div>
-        <button>View our Versa Connect offers</button>
       </section>
 
       <!-- Keep You Going -->
@@ -417,40 +429,43 @@
             <img
               src="https://www.bristolstreetversa.com/custom/51651.jpg"
               alt="Keep You Going"
-              class="container"
+              class="banner__image"
             />
           </div>
           <div class="banner__details">
-            <h2>Keeping you going</h2>
-            <p>
+            <h2 class="banner__details--larger-heading">Keeping you going</h2>
+            <p class="banner__details--line-height">
               At Bristol Street Versa our priority is to offer so much more than
               just the sale of a Wheelchair Accessible Vehicle (WAV). We
               recognise that the lives of the majority of our customers aren't
               always plain sailing - and that's why we are committed to step in
               to make sure we are #KeepingYouGoing.
             </p>
-            <button>More Information</button>
+            <button class="banner__button">More Information</button>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="information footer">
-        <div class="footer__row information">
-          <div class="footer__info information">
-            <div>
+      <div class="footer container--narrow">
+        <div class="flex-row">
+          <div class="column--forty">
+            <div class="logo">
               <img
                 src="https://www.bristolstreetversa.com/custom/51649.png"
                 alt="Vertu motors Logo"
-                class="footer__logo"
+                class="container--fit logo--invert"
               />
             </div>
-            <p>
-              If you're looking for a new or used Wheelchair Accessible Vehicle
-              (WAV), then Bristol Street Versa is the best place to start.
-            </p>
+            <div class="footer__text">
+              <p>
+                If you're looking for a new or used Wheelchair Accessible
+                Vehicle (WAV), then Bristol Street Versa is the best place to
+                start.
+              </p>
+            </div>
           </div>
-          <div class="footer__links">
+          <div class="links-list">
             <div>
               <ul>
                 <li><a href="#">Home</a></li>
@@ -471,7 +486,7 @@
             </div>
           </div>
         </div>
-        <div class="footer__address information">
+        <div class="footer__address">
           <p>
             Registered office for all group companies: Vertu Motors plc, Show
             Accessibility Options |Vertu House, Fifth Avenue Business Park, Team
@@ -480,17 +495,19 @@
           </p>
         </div>
       </div>
-      <div class="form">
-        <div>
-          <h2>Interested in this vehicle?</h2>
-          <p>
-            Are you interested in the Ford Tourneo? Simply fill in the form
-            below and we'll be in touch.
-          </p>
+      <div class="inquery">
+        <div class="inquery__form">
           <form action="submit">
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Number" />
-            <button type="submit">Go</button>
+            <h2 class="inquery__heading">Interested in this vehicle?</h2>
+            <div class="inquery__text">
+              <p>
+                Are you interested in the Ford Tourneo? Simply fill in the form
+                below and we'll be in touch.
+              </p>
+            </div>
+            <input type="text" placeholder="Name" class="inquery__input" />
+            <input type="text" placeholder="Number" class="inquery__input" />
+            <button type="submit" class="button">Go</button>
           </form>
         </div>
       </div>
