@@ -32,60 +32,63 @@
               <li class="panel__selector panel--internal-borders nav__item--links-decoration" onclick='showPanel("colors")'>
                 colors
               </li>
-              <li class="panel__selector panel--internal-borders nav__item--links-decoration" onclick='showPanel("trim")'>
-                trim
+              <li class="panel__selector nav__item--links-decoration" onclick='showPanel("trim")'>
+                Interior Trim
               </li>
             </ul>
         </div>
         <div>
           <!-- dimensions -->
-          <div class="panel__slide" id="dimensions">
-            <!-- table -->
-            <div>
-              <table class="dimensions__table">
-                <tr>
-                  <th></th>
-                  <th>Short</th>
-                  <th>Long</th>
-                </tr>
-                <tr>
-                  <td class="dimensions__data">Entry height</td>
-                  <td class="dimensions__data">1,373mm</td>
-                  <td class="dimensions__data">1,373mm</td>
-                </tr>
-                <tr>
-                  <td class="dimensions__data">Ramp length</td>
-                  <td class="dimensions__data">1,010mm</td>
-                  <td class="dimensions__data">1,010mm</td>
-                </tr>
-                <tr>
-                  <td class="dimensions__data">Ramp width</td>
-                  <td class="dimensions__data">755mm</td>
-                  <td class="dimensions__data">755mm</td>
-                </tr>
-                <tr>
-                  <td class="dimensions__data">Channel length</td>
-                  <td class="dimensions__data">1,580mm</td>
-                  <td class="dimensions__data">1,580mm</td>
-                </tr>
-                <tr>
-                  <td class="dimensions__data">External height</td>
-                  <td class="dimensions__data">1,852mm</td>
-                  <td class="dimensions__data">1,845mm</td>
-                </tr>
-                <tr>
-                  <td class="dimensions__data">External length</td>
-                  <td class="dimensions__data">4,418mm</td>
-                  <td class="dimensions__data">4,818mm</td>
-                </tr>
-              </table>
-            </div>
-            <!-- dimensions pic -->
-            <div class="dimensions__image">
-              <img
-                src="https://www.bristolstreetversa.com/custom/49792.jpg"
-                alt="car's dimensions"
-              />
+          <div class="panel__slide container" id="dimensions">
+            
+            <div class="container">
+                <!-- table -->
+               <div class="container--half">
+                <table class="table">
+                    <tr>
+                    <th></th>
+                    <th class="table__heading">Short</th>
+                    <th class="table__heading">Long</th>
+                    </tr>
+                    <tr>
+                    <td class="table__data table__data--grey-background">Entry height</td>
+                    <td class="table__data">1,373mm</td>
+                    <td class="table__data">1,373mm</td>
+                    </tr>
+                    <tr>
+                    <td class="table__data table__data--grey-background">Ramp length</td>
+                    <td class="table__data">1,010mm</td>
+                    <td class="table__data">1,010mm</td>
+                    </tr>
+                    <tr>
+                    <td class="table__data table__data--grey-background">Ramp width</td>
+                    <td class="table__data">755mm</td>
+                    <td class="table__data">755mm</td>
+                    </tr>
+                    <tr>
+                    <td class="table__data table__data--grey-background">Channel length</td>
+                    <td class="table__data">1,580mm</td>
+                    <td class="table__data">1,580mm</td>
+                    </tr>
+                    <tr>
+                    <td class="table__data table__data--grey-background">External height</td>
+                    <td class="table__data">1,852mm</td>
+                    <td class="table__data">1,845mm</td>
+                    </tr>
+                    <tr>
+                    <td class="table__data table__data--grey-background">External length</td>
+                    <td class="table__data">4,418mm</td>
+                    <td class="table__data">4,818mm</td>
+                    </tr>
+                </table>
+                </div>
+                <!-- dimensions pic -->
+                <div class="container--half">
+                <img
+                    src="https://www.bristolstreetversa.com/custom/49792.jpg"
+                    alt="car's dimensions"
+                />
+                </div>
             </div>
           </div>
           <!-- vehicle layouts -->
@@ -200,44 +203,59 @@
           </div>
           <!-- Interior Trim -->
           <div class="panel__slide" id="trim">
-            <div class="">
+            <div>
               <img
                 src="https://www.bristolstreetversa.com/custom/50563.jpg"
                 alt="Versa Interior"
                 class="container--fit"
               />
             </div>
-            <div class="container">
-              <div>
+            <div class="container container--space-between">
+              <div class="trim__thumbnail">
                 <img
                   src="https://www.bristolstreetversa.com/custom/51652.jpg"
                   alt="Versa Titanium"
+                  class="container--fit"
                 />
-                <h3>Titanium</h3>
-                <p>Insert: Chicane in Medium Stone</p>
-                <p>Bolster: Malt in Medium Stone</p>
-                <input type="checkbox" name="Titanium" id="Titanium" />
-              </div>
-              <div>
+                <div class="trim__options">
+                    <div>
+                        <h3>Titanium</h3>
+                        <p>Insert: Chicane in Medium Stone</p>
+                        <p>Bolster: Malt in Medium Stone</p>
+                    </div>
+                    <input type="checkbox" name="Titanium" id="Titanium" class="trim__checkbox" />
+                    </div>
+                </div>
+            <div class="trim__thumbnail">
                 <img
                   src="https://www.bristolstreetversa.com/custom/51653.jpg"
                   alt="Versa Zetec"
+                  class="container--fit"
                 />
-                <h3>Zetec</h3>
-                <p>Insert: Route in Charcoal Black</p>
-                <p>Bolster: Max in Charcoal Black</p>
-                <input type="checkbox" name="Zetec" id="Zetec" />
-              </div>
-              <div>
+                <div class="trim__options">
+                    <div>
+                        <h3>Zetec</h3>
+                        <p>Insert: Route in Charcoal Black</p>
+                        <p>Bolster: Max in Charcoal Black</p>
+                    </div>
+                    <input type="checkbox" name="Zetec" id="Zetec" class="trim__checkbox" />
+                 </div>
+            </div>
+            <div class="trim__thumbnail">
                 <img
                   src="https://www.bristolstreetversa.com/custom/51654.jpg"
                   alt="Versa Titanium2"
+                  class="container--fit"
                 />
-                <h3>Titanium</h3>
-                <p>Insert: Chicane in Charcoal Black</p>
-                <p>Bolster: Malt in Charcoal Black</p>
-                <input type="checkbox" name="Titanium2" id="Titanium2" />
-              </div>
+                <div class="trim__options">
+                    <div>
+                        <h3>Titanium</h3>
+                        <p>Insert: Chicane in Charcoal Black</p>
+                        <p>Bolster: Malt in Charcoal Black</p>
+                    </div>
+                    <input type="checkbox" checked name="Titanium2" id="Titanium2" class="trim__checkbox" />
+                </div>
+            </div>
             </div>
           </div>
         </div>

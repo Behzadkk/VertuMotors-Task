@@ -381,3 +381,41 @@ body {
 .panel__slide {
   display: none;
 }
+
+.container--half {
+  width: 50%;
+}
+.table {
+  border-collapse: collapse;
+}
+
+.table__heading {
+  text-align: left;
+  padding: 1rem;
+}
+
+.table__data {
+  padding: 1.2rem 2rem;
+  border: 0.75px solid #c2c2c2;
+}
+.table__data--grey-background {
+  background-color: #e2e2e2;
+}
+.trim__thumbnail {
+  width: 32%;
+}
+
+.container--space-between {
+  justify-content: space-between;
+}
+
+.trim__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trim__checkbox {
+  height: 2rem;
+  width: 2rem;
+}
