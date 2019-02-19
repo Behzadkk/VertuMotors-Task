@@ -11,7 +11,7 @@ body {
   width: 100%;
 }
 .container__text {
-  padding: 2rem 0;
+  padding-top: 2rem;
   line-height: 1.7rem;
 }
 .container--narrow {
@@ -181,8 +181,8 @@ body {
   width: 100%;
   line-height: 2rem;
 }
-.button--margin-bottom {
-  margin-bottom: 3rem;
+.button--margin {
+  margin: 2rem 0 3rem 0;
 }
 .ignor {
   display: none;
@@ -418,4 +418,73 @@ body {
 .trim__checkbox {
   height: 2rem;
   width: 2rem;
+}
+
+.colors__slide {
+  display: none;
+}
+
+.colors__selector {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  margin: 0 20px 10px 0;
+  background-color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 3px 1px 10px #a9a9a9;
+  border-radius: 50%;
+}
+
+.colors__selector--silver {
+  background-color: #b3b4b8;
+}
+
+.colors__selector--deep-impact-blue {
+  background-color: #1c296d;
+}
+
+.colors__selector--red {
+  background-color: #bb2121;
+}
+
+.colors__selector--metalicious {
+  background-color: #737469;
+}
+
+.colors__selector--guard {
+  background-color: #293429;
+}
+
+.colors__selector--solar {
+  background-color: #ccc65d;
+}
+
+.colors__selector--blazer-blue {
+  background-color: #1b1e40;
+}
+
+.colors__selector--black {
+  background-color: #111111;
+}
+
+.colors__selector--magnetic {
+  background-color: #4a4035;
+}
+
+/* Swatch is selected */
+.colors__selector--is-selected::before {
+  content: "";
+  color: #fff;
+  height: 1rem;
+  width: 0.5rem;
+  margin: 0.5rem 0 0 0.95rem;
+  border-width: 0 3px 3px 0;
+  position: absolute;
+  display: initial;
+  border-style: solid;
+  transform: rotate(45deg);
+}
+
+.colors__selector--is-selected {
+  display: table;
 }
