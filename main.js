@@ -1,41 +1,46 @@
-// slideshow
-// let slideIndex = 1;
-// showSlides(slideIndex);
+//slideshow;
+let slideIndex = 1;
+showSlides(slideIndex);
 
-// // Next/previous controls
-// function plusSlides(n) {
-//   showSlides((slideIndex += n));
-// }
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
 
-// function showSlides(n) {
-//   const slides = document.querySelectorAll(".slideshow__slide");
-//   if (n > slides.length) {
-//     slideIndex = 1;
-//   }
-//   if (n < 1) {
-//     slideIndex = slides.length;
-//   }
-//   for (let i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   slides[slideIndex - 1].style.display = "block";
-// }
-
-// function currentPanel(id) {
-//   const panel = document.querySelectorAll(".panel__slide");
-//   panel.addEventListener("click", function() {
-//     let id = panel.;
-//     showPanel(id);
-//   });
-// }
-let id = "dimensions";
-showPanel(id);
-function showPanel(id) {
-  const panelSlide = document.querySelectorAll(".panel__slide");
-  for (let i = 0; i < panelSlide.length; i++) {
-    panelSlide[i].style.display = "none";
+function showSlides(n) {
+  const slides = document.querySelectorAll(".slideshow__slide");
+  if (n > slides.length) {
+    slideIndex = 1;
   }
-  document.getElementById(id).style.display = "block";
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
+// panels
+const panelSelector = document.querySelectorAll(".panel__selector");
+for (let i = 0; i < panelSelector.length; i++) {
+  slideListener(panelSelector[i]);
+}
+
+// Initial panel
+displaySlide(panelSelector[0]);
+
+// Panel Event listener
+function slideListener(item) {
+  item.addEventListener("click", function() {
+    displaySlide(item);
+  });
+}
+
+// panel callbacks
+function displaySlide(item) {
+  isActive(item, "panel__selector--active");
+  showSlide(item.hash, "panel__slide");
 }
 
 // COLORS
@@ -46,29 +51,30 @@ for (let i = 0; i < colorSelectors.length; i++) {
 //Initial Color
 displayedSwatch(colorSelectors[2]);
 
-//Event Listener
+//Colors Event Listener
 function photoListener(item) {
   item.addEventListener("click", function() {
     displayedSwatch(item);
   });
 }
-// Color Callbacks
+// Colors Callbacks
 function displayedSwatch(swatch) {
   isActive(swatch, "colors__selector--is-selected");
-  showPhoto(swatch.hash);
+  showSlide(swatch.hash, "colors__slide");
+  activeOption(swatch, "nav__header--active-option");
 }
 
-// Car's Photo
-function showPhoto(id) {
-  const carPhoto = document.querySelector(id);
-  const slides = document.querySelectorAll(".colors__slide");
+// Show selected slide
+function showSlide(id, slidesClassName) {
+  const toShowSlide = document.querySelector(id);
+  const slides = document.getElementsByClassName(slidesClassName);
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  carPhoto.style.display = "block";
+  toShowSlide.style.display = "block";
 }
-// Active
 
+// Active Selector
 function isActive(item, selectionClass) {
   const selectedColor = document.getElementsByClassName(selectionClass);
   for (let i = 0; i < selectedColor.length; i++) {
@@ -78,4 +84,10 @@ function isActive(item, selectionClass) {
     );
   }
   item.className += " " + selectionClass;
+}
+
+function activeOption(item, selectedOptinClass) {
+  const colorOption = item.parentElement.parentElement;
+  const colorHeading = colorOption.getElementsByTagName("a")[0];
+  isActive(colorHeading, selectedOptinClass);
 }
